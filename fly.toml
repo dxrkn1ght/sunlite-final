@@ -1,0 +1,8 @@
+app = "sunlite-app"
+[build]
+  image = "registry.fly.io/yourimage:latest"
+
+[env]
+  DATABASE_URL = "postgresql+asyncpg://user:pass@host:5432/dbname"
+  BOT_TOKEN = "123:..."
+  ADMIN_IDS = "123456789"

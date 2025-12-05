@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  bot:
+    build: .
+    volumes:
+      - ./:/app
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - ADMIN_IDS=${ADMIN_IDS}
+      - DATABASE_URL=${DATABASE_URL}
+    command: ["python","main.py"]
